@@ -29,10 +29,6 @@ void initKeypad(){
     ODC_ROW_P6 = 1;
     ODC_ROW_P7 = 1;
     
-    // Input pins need pull-ups
-    CNPU_COL_P1 = 1;
-    CNPU_COL_P3 = 1;
-    CNPU_COL_P5 = 1;
     
     // Now enable CN for each input pin
     CNCONCbits.ON = 1; //Enable overall CN Interrupt CNCONx
